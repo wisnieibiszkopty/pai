@@ -71,6 +71,8 @@ footer {
     margin-bottom: 10px;
 }
 
+textarea{background: white;}
+
 @media screen and (max-width: 720px) {
     nav button { width: 48%;
         padding: 10px 0;
