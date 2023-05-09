@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Szybki Kurs HTML</title>
+</head>
+<body>
+<div id="kontener">
+    <header><h2>Szybki Kurs HTML</h2></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Podstawowe znaczniki</a></li>
+            <li><a href="tabele.html">Tworzenie tabel</a></li>
+            <li><a href="#">Budowa formularzy</a>
+                <ul>
+                    <li><a href="formularze.html">Pola formularza</a></li>
+                    <li><a href="zamowienie.html">Zamówienie</a></li>
+                    <li><a href="walidacja.html">Walidacja</a></li>
+                    <li><a href="dotacje.html">Dotacja</a></li>
+                    <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    <li><a href="calculator.html">Kalkulator</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="content-container">
+        <main class="calculations">
+            <h1>Pożyczka</h1>
+            <table>
+                <tr>
+                    <td>Kwota:</td>
+                    <td><input type="text" id="kwota" name="kwota"><label for="kwota"></label><br></td>
+                </tr>
+                <tr>
+                    <td>Ile rat: </td>
+                    <td><input type="text" id="ile_rat" name="ile_rat"><label for="ile_rat"></label><br></td>
+                </tr>
+                <tr>
+                    <td>Procent: </td>
+                    <td><input type="text" id="procent" name="procent"><label for="procent"></label><br></td>
+                </tr>
+                <tr>
+                    <td>Rata miesięczna: </td>
+                    <td><input type="text" id="rata" name="rata" disabled value="">
+                        <label for="rata"></label></td>
+                </tr>
+                <tr>
+                    <td>Kwota z odestkami: </td>
+                    <td><input type="text" id="kwota_z_odsetkami" name="kwota_z_odsetkami" disabled value="">
+                        <label for="kwota_z_odsetkami"></label><br></td>
+                </tr>
+            </table>
+            <button onclick="obliczRate()">Oblicz ratę stałą</button>
+        </main>
+        <aside>
+            <article>
+                <div class="article_upper"><h3>Walidatory:</h3></div>
+                <div class="article_down">
+                    <ul>
+                        <li><a href="https://validator.w3.org/">HTML </a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="article_upper"><h3>Kursy:</h3></div>
+                <div class="article_down">
+                    <ul>
+                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                    </ul>
+                </div>
+            </article>
+        </aside>
+    </div>
+    <footer> &copy;KW </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

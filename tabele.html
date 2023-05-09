@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <title>Tworzenie tabel</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/tabele.css" type="text/css">
+</head>
+<body>
+<div id="kontener">
+    <header><h2>Szybki Kurs HTML</h2></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Podstawowe znaczniki</a></li>
+                <li><a href="tabele.html">Tworzenie tabel</a></li>
+                <li><a href="#">Budowa formularzy</a>
+                    <ul>
+                        <li><a href="formularze.html">Pola formularza</a></li>
+                        <li><a href="zamowienie.html">Zamówienie</a></li>
+                        <li><a href="walidacja.html">Walidacja</a></li>
+                        <li><a href="dotacje.html">Dotacja</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    <div id="content-container">
+        <main>
+            <h3>Podstawowe znaczniki do tworzenia tabel to:</h3>
+            <ul>
+                <li>&lt;table&gt; - znacznik zawierający całą tabelę</li>
+                <li>&lt;caption&gt; - tytuł tabeli</li>
+                <li>&lt;thead&gt; - nagłówek tabeli</li>
+                <li>&lt;tbody&gt; - zawartość tabeli</li>
+                <li>&lt;tfoot&gt; - stopka tabeli</li>
+                <li>&lt;tr&gt; - wierssz tabeli</li>
+                <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+                <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
+            </ul>
+            <h3>Przykładowa tabela HTML:</h3>
+            <table id="centered-table">
+                <caption>Popularność języków programowania</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Język programowania</th>
+                        <th colspan="2">Pozycja</th>
+                    </tr>
+                    <tr>
+                        <th>luty 2023</th>
+                        <th>luty 2022</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="parzysty">
+                        <td>C</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="parzysty">
+                        <td>Java</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Na podstawie:
+                            <a href="https://www.tiobe.com/tiobe-index/"><br>https://www.tiobe.com/tiobe-index/</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <aside>
+            <article>
+                <div class="article_upper"><h3>Walidatory:</h3></div>
+                <div class="article_down">
+                    <ul>
+                        <li><a href="https://validator.w3.org/">HTML </a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="article_upper"><h3>Kursy:</h3></div>
+                <div class="article_down">
+                    <ul>
+                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                    </ul>
+                </div>
+            </article>
+        </aside>
+    </div>
+    <footer> &copy;KW </footer>
+</div>
+</body>
+</html>

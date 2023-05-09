@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Przyciski</title>
+  <style>
+    .button1{
+      background-color: white;
+      color: green;
+      border: 5px solid green;
+      padding: 40px 80px;
+      text-align: center;
+      font-size: 400%;
+      display: inline-block;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      margin-bottom: 20px;
+    }
+
+    .button1:hover{
+      background-color: green;
+      color: white;
+      border: 5px solid green;
+      padding: 80px 160px;
+    }
+
+    .button2{
+      background-color: black;
+      color: orange;
+      padding: 24px 32px;
+      text-align: center;
+      font-size: 120%;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    @keyframes gradient {
+      0%{background-color: darkred;}
+      20%{background-color: red;}
+      40%{background-color: darkorange;}
+      60%{background-color: orange;}
+      80%{background-color: darkorange;}
+      100%{background-color: red;}
+    }
+    
+    .button2:hover{
+      color: black;
+      animation-name: gradient;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+
+    .button3{
+      background-color: dimgrey;
+      color: white;
+      padding: 48px 96px;
+      text-align: center;
+      font-size: 30px;
+      display: inline-block;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      margin-left: 30px;
+    }
+
+    @keyframes b3 {
+      0%{
+        background-color: #210535;
+        box-shadow: 10px 10px 10px 5px #210535;
+      }
+      25%{
+        background-color: #430d4b;
+        box-shadow: 10px 10px 10px 5px #430d4b;
+      }
+      50%{
+        background-color: #7b337d;
+        box-shadow: 10px 10px 10px 5px #7b337d;
+      }
+      75%{
+        background-color: #430d4b;
+        box-shadow: 10px 10px 10px 5px #430d4b;
+      }
+      100%{
+        background-color: #210535;
+        box-shadow: 10px 10px 10px 5px #210535;
+      }
+    }
+
+    .button3:hover{
+      padding: 72px 144px;
+      animation-name: b3;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shadow-animate {
+      0%{ filter: hue-rotate(0deg);}
+      100%{ filter: hue-rotate(360deg);}
+    }
+
+    .button4{
+      display: inline-block;
+      margin: 20px;
+      padding: 30px 60px;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+      animation: shadow-animate 5s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="button1">Przycisk 1</div><br><br>
+  <div class="button2">Przycisk 2</div><br><br>
+  <div class="button3">Przycisk 3</div><br><br>
+  <div class="button4">Przycisk 4</div>
+</body>
+</html>

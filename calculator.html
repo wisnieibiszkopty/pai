@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/calculator.css" type="text/css">
+    <title>Kalkulator</title>
+</head>
+<body>
+  <h1>Kalkulator</h1>
+  <div class="grid-container">
+    <div class="grid1">Liczba 1: <input type="text" id="number1" name="number1"><label for="number1"></label></div>
+    <div class="grid2">Liczba 2: <input type="text" id="number2" name="number2"><label for="number2"></label></div>
+    <div class="grid3"><button onclick="choseOperation('+')" id="add">+</button></div>
+    <div class="grid4"><button onclick="choseOperation('-')" id="sub">-</button></div>
+    <div class="grid5"><button onclick="calculate()" id="equ">=</button></div>
+    <div class="grid6"><button onclick="choseOperation('*')" id="mul">*</button></div>
+    <div class="grid7"><button onclick="choseOperation('/')" id="div">/</button></div>
+    <div class="grid8">Wynik: <input type="text" id="result" name="result" disabled value="">
+        <label for="result"></label></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

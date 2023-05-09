@@ -1,0 +1,32 @@
+table{
+    background: wheat;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #000080;
+}
+
+td{color:black;}
+
+th{color:wheat;}
+
+tfoot td{color:wheat;}
+
+caption{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+thead, tfoot{
+    background: #000040;
+    font-size: 110%;
+    padding: 5pt;
+}
+
+td, th{border: 1pt solid #000080;}
+
+tfoot a{color: wheat;}
+
+tfoot a:hover{color:#a447dd;}
+
+tr:nth-child(even){background: #ffffff;}

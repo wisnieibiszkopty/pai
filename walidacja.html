@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+     <title> Formularz rejestracyjny</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+ </head>
+ <body>
+     <div class="flex-container">
+         <form action="#" method="get">
+         <p>
+             Imię*:<br><input type="text" id="imie" name="imie" pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$" required>
+             <label for="imie"></label><br>
+             Nazwisko*:<br><input type="text" id="nazwisko" name="nazwisko" pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$" required>
+             <label for="nazwisko"></label><br>
+             Email*:<br><input type="email" id="email" name="email" placeholder="email@poczta.pl"
+                               pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><label for="email"></label><br>
+             Data urodzenia:<br><input type="date" id="data" name="data" required>
+             <label for="data"></label><br>
+             Telefon*:<br><input type="tel" id="tel" name="tel" placeholder="np. 123456789" pattern="[0-9]{9}" required>
+             <label for="tel"></label><br>
+             Hasło*:<br><input type="password" id="haslo" name="haslo"
+                               title="Hasło musi mieć minimum 8 znaków, jedną małą i dużą literę oraz jedną cyfrę"
+                               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$" required>
+             <label for="haslo"></label><br>
+         </p>
+         <p>
+             Uczeń: <input type="radio" id="uczen" name="kto" value="uczen"><label for="uczen"></label>
+             Student: <input type="radio" id="student" name="kto" value="student"><label for="student"></label>
+             Pracownik: <input type="radio" id="pracownik" name="kto" value="pracownik"><label for="pracownik"></label>
+             <br><br>
+             Zainteresowania:<br><select name="zainteresowania" id="zainteresowania" multiple size="3">
+             <option value="sport">Sport</option>
+             <option value="muzyka">Muzyka</option>
+             <option value="film">Film</option>
+             <option value="motoryzacja">Motoryzacja</option>
+             <option value="taniec">Taniec</option>
+             <option value="podróże">Podróże</option>
+             </select><label for="zainteresowania"></label>
+             <br><br>
+             <input type="checkbox" id="akceptacja" name="akceptacja" required>*Akceptuję regulamin<label for="akceptacja"></label>
+             <br><br>
+             <input type="submit" value="Rejestruj">
+             <input type="reset" value="Wyczyść">
+         </p>
+         </form>
+     </div>
+ </body>
+</html>

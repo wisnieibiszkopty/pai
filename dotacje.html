@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Dotacje</title>
+</head>
+<body>
+    <h1>Formularz dotacji</h1>
+    <form id="flex-from">
+        <fieldset class="flex-fieldset">
+            Beneficjent:<input type="text" id="beneficjent" name="beneficjent" required>
+            <label for="beneficjent"></label><br>
+            Wartość dotacji:<input type="number" id="wartosc" name="wartosc" min="20" step="10" required>
+            <label for="wartosc"></label>
+        </fieldset><br>
+        <fieldset class="flex-fieldset">
+            <legend>Dane karty płatniczej</legend>
+            Karta: <input type="radio" id="visa" value="visa" name="karta">
+            <label for="visa">Visa</label>
+            <input type="radio" id="master" value="master" name="karta">
+            <label for="master">Master</label><br>
+            Numer:<input type="text" id="numer" name="numer" pattern="^[0-9]{16}$" title="16-cyfrowy numer karty" required>
+            <label for="numer"></label><br>
+            Data ważności:<input type="date" id="data" name="data">
+            <label for="data"></label><br>
+            Kod CVV:<input type="number" id="cvv" name="cvv" pattern="[0-9]{3}" title="3 cyfry na odwrocie karty">
+            <label for="cvv"></label>
+        </fieldset>
+        <div id="flex-buttons">
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Wyczyść">
+        </div>
+    </form>
+</body>
+</html>
