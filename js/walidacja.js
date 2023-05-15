@@ -16,6 +16,38 @@ function sprawdz_checkbox(checkbox_id){
     let obiekt=document.getElementById(checkbox_id);
     return obiekt.checked;
 }
+
+function wyswietlDane(){
+    const checkbox_buttons = document.querySelectorAll('input[type=checkbox]');
+    let checkbox_array = [];
+    for(const checkbox_button of checkbox_buttons){
+        if(checkbox_button.checked){
+            checkbox_array.push(checkbox_button.value);
+        }
+    }
+
+    const radio_buttons = document.querySelectorAll('input[name="zaplata"]');
+    let zaplata;
+    for(const radio_button of radio_buttons){
+        if(radio_button.checked){
+            zaplata = radio_button.value;
+            break;
+        }
+    }
+
+    let message = "Dane z wypełnionego przez ciebie formularza: " +
+        "\nNazwisko: " + document.getElementById("nazwa").value +
+        "\nWiek: " + document.getElementById("wiek").value +
+        "\nKraj: " + document.getElementById("kraj").value +
+        "\nE-mail: " + document.getElementById("email").value +
+        "\nWybrane produkty: " + checkbox_array +
+        "\nSposób zapłaty: " + zaplata;
+
+    alert(message);
+
+    return true;
+}
+
 function sprawdz() {
     console.log("twoja stara");
     let ok=true;
@@ -48,5 +80,5 @@ function sprawdz() {
         document.getElementById("zaplata_error").innerHTML="Wybierz sposób zapłaty!";
     } else document.getElementById("zaplata_error").innerHTML="";
 
-    return ok;
+    return ok && wyswietlDane();
 }
