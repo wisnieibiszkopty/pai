@@ -147,6 +147,14 @@ input{
     color: white;
 }
 
+#nazwa, #email, #wiek{
+    border-bottom: 1px solid white;
+}
+
+#nazwa:focus, #email:focus, #wiek:focus{
+    border-bottom: 2px solid white;
+}
+
 input[type=text], input[type=email], input[type=password], input[type=tel]
 {
     border-bottom: 1px solid white;
@@ -241,6 +249,8 @@ input[type=submit]:hover, input[type=reset]:hover{
     justify-content: space-around;
     align-items: center;
 }
+
+.czerwone{color: #922029;}
 
 @media screen and (min-width: 481px) and (max-width: 720px){
     .gallery div{
