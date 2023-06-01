@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Storage</title>
+    <link rel="stylesheet" href="css/storage.css" type="text/css">
+    <script src="js/storage.js"></script>
+</head>
+<body>
+  <h1>Kolory</h1>
+  <form>
+      Kod koloru: <input type="text" name="rgb" id="rgb"><label for="rgb"></label><br><br>
+      Nazwa: <input type="text" name="nazwa" id="nazwa"><label for="nazwa"></label><br><br>
+      <button type="button" onclick="saveData()">Zapisz parę</button>
+      <button type="button" onclick="showData()">Pokaż wszystkie pary</button>
+      <button type="button" onclick="deleteData()">Usuń dane</button>
+  </form>
+  <div id="data">
+
+  </div>
+  <h1>Koszyk</h1>
+  <form>
+      Nazwa produktu: <input type="text" name="produkt" id="produkt"><label for="produkt"></label><br><br>
+      Cena: <input type="text" name="cena" id="cena"><label for="cena"></label><br><br>
+      Kolor: <input type="text" name="kolor" id="kolor"><label for="kolor"></label><br><br>
+      Liczba sztuk: <input type="text" name="ilosc" id="ilosc"><label for="ilosc"></label><br><br>
+      <button type="button" onclick="saveBasket()">Zapisz produkt do koszyka</button>
+      <button type="button" onclick="showBasket()">Wyświetl koszyk</button>
+      <button type="button" onclick="clearBasket()">Usuń wszystkie produkty</button><br><br>
+      Usuń element: <input type="text" name="usun" id="usun"><label for="usun"></label><br><br>
+      <button type="button" id="delete">Usuń wybraną pozycje</button>
+  </form>
+  <div id="basket">
+
+  </div>
+</body>
+</html>
